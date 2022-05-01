@@ -1,5 +1,27 @@
-let paso1 : string = "inicio paso 1";
-let paso2 : string = "inicio paso 2";
+// Ejercicio1 clase3 - Lunes 25 de Abril
+// Estructuras de Control - AUTOS DE CARRERA
 
-console.log(paso1);
-console.log(paso2);
+/* • En una prueba, un piloto tiene que completar 4
+vueltas
+• Se necesita un programa que permita ingresar
+por teclado el tiempo de cada vuelta
+• El programa debe retornar el tiempo total y el
+promedio de vuelta */
+
+let dat1: number = document.getElementById("dato1");
+let dat2: number = document.getElementById("dato2");
+let dat3: number = document.getElementById("dato3");
+let dat4: number = document.getElementById("dato4");
+let btnEnv = document.getElementById("btnEnviar");
+
+btnEnv.addEventListener("click" , () => {
+let tiempo1 : number = Number(dat1value);
+let tiempo2 : number = Number(dat2value);
+let tiempo3 : number = Number(dat3value);
+let tiempo4 : number = Number(dat4value);
+
+let total: number = tiempo1 + tiempo2 + tiempo3 + tiempo4;
+
+console.log("el tiempo total es ", total);
+console.log("el promedio de vuelta es", total / 4);
+});
