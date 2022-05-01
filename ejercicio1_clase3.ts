@@ -15,10 +15,10 @@ let dat4: number = document.getElementById("dato4");
 let btnEnv = document.getElementById("btnEnviar");
 
 btnEnv.addEventListener("click" , () => {
-let tiempo1 : number = Number(dat1value);
-let tiempo2 : number = Number(dat2value);
-let tiempo3 : number = Number(dat3value);
-let tiempo4 : number = Number(dat4value);
+let tiempo1 : number = Number(dat1.value);
+let tiempo2 : number = Number(dat2.value);
+let tiempo3 : number = Number(dat3.value);
+let tiempo4 : number = Number(dat4.value);
 
 let total: number = tiempo1 + tiempo2 + tiempo3 + tiempo4;
 
